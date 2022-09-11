@@ -1,0 +1,102 @@
+.shop{
+
+    h2{
+        font-size:$h2-font-size;
+        border-left: 11px solid #9F1213;
+
+    }
+
+    .select{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        &-place{
+            display: inline;
+            font-size: $h4-font-size;
+        }
+
+        select{
+            width:200px;
+            height: 30px;
+            margin: 16px;
+        }
+
+    }
+   
+}
+
+
+
+    .store-location{
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center; 
+       
+        flex-wrap: wrap;
+        
+       
+      
+
+        .store-card{
+
+            width: 30.5%;
+
+            @include ipad(){
+
+                width: 45%;
+                margin-bottom: 24px;
+
+            }
+
+            @include mobile(){
+                margin: 0 auto;
+                width: 90%;
+                margin-bottom: 24px;
+            }
+
+            img{
+                display: block;
+                max-width: 100%;
+                height: auto;
+            }
+    
+            .h4-title{
+                font-size: $h4-font-size;
+                padding-left: 16px;
+                padding-top: 8px;
+            }
+    
+            .store-detail{
+                display: block;
+                background-color: $dark;
+                color: $white;
+                text-align: center;
+                text-decoration: none;
+            }
+    
+            .store-info{
+                
+                padding: 16px;
+                
+                .icon{
+                    font-size: 18px;
+                    
+                }
+    
+                .information{
+                    display: inline;
+                
+                }
+            }
+        }
+  
+        
+
+    }
+
+
+
+
+

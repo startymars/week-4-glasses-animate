@@ -1,0 +1,1 @@
+{"version":3,"sources":["all.js"],"names":["AOS","init","duration","offset","delay"],"mappings":";;AAAAA,GAAG,CAACC,IAAJ,CAAS;AACPC,EAAAA,QAAQ,EAAE,IADH;AAEPC,EAAAA,MAAM,EAAE,GAFD;AAGPC,EAAAA,KAAK,EAAE;AAHA,CAAT","file":"all.js","sourcesContent":["AOS.init({\n  duration: 2000,\n  offset: 400,\n  delay: 10\n})\n"]}

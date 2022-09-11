@@ -1,0 +1,154 @@
+.subheader{
+    background-color: $danger;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 20px;
+
+    @include mobile(){
+        display: none;
+    }
+   
+
+    .header-title{
+
+        color: $white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 20px;
+
+        .sub-title{
+           padding-right: 20px;
+           padding-left: 20px;
+
+           a{
+               text-decoration: none;
+               color: $white;
+           }
+        }
+    }
+
+    .search{
+        margin-right: 40px;
+        color: $white;
+    }
+
+}
+
+.blog{
+
+   
+    
+    h2{
+        font-size:$h2-font-size;
+        border-left: 10px solid #9F1213;
+
+       
+    }   
+
+    .blog-content{
+        display: flex;
+        
+        @include ipad(){
+            margin-bottom: 80px;
+        }
+        
+      
+        @include mobile(){
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 64px;
+        }
+       
+    
+        .blog-image{
+           
+            width: 100%;
+           
+            padding-right: 24px;
+            
+
+            @include mobile(){
+                margin-bottom: 8px;
+                padding: 0;
+            }
+
+            img{
+                max-width: 100%;
+                height: 100%;
+                object-fit: cover;
+                vertical-align: middle;
+            }
+        }
+       
+
+       
+    }
+}
+
+.blog-title{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .blog-top{
+
+
+        .h3-title{
+            color: $danger;
+            font-size: 32px;
+        }
+    
+        .sub-blog{
+    
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    
+            .h5-title{
+    
+                font-size: $h5-font-size;
+        
+            }
+        }
+
+        .blog-detail{
+          
+            margin-top: 16px;
+            font-size: #555555;
+           
+
+            @include mobile(){
+                display: none;
+            }
+        }
+
+    }
+
+
+    .blog-more{
+        display: block;
+        font-size: $h3-font-size;
+        color: $danger;
+        text-decoration: none;
+        text-align: right;
+      
+        @include ipad(){
+            display: none;
+        }
+
+        &:hover{
+            color: $dark;
+        }
+       
+    
+    }
+    
+}
+
+
+

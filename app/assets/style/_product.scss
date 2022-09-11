@@ -1,0 +1,144 @@
+.glasses-border{
+    
+    .glasses{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+
+        .glass-series{
+           
+            font-size:32px;
+            width: 30%;
+            text-align: center;
+            border-bottom: 10px solid transparent;
+           
+
+            @include ipad(){
+                font-size:$h4-font-size;
+            }
+
+            @include mobile(){
+                font-size:$font-size-base;
+            }
+        }
+
+        .series{
+
+            display: block;
+            text-decoration: none;
+            color: $dark;
+            padding: 12px;
+
+        }
+
+        .series:hover{
+            border-left: 1px solid #DCDCDC;
+            border-right: 1px solid #DCDCDC;
+            border-bottom: 10px solid $primary;
+
+        }
+
+    }
+}
+
+.glasses-bg{
+    display: flex;
+    width: 50%;
+   
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.glasses-combi{
+
+    text-align: center;
+
+    .title-combi{
+        font-size: 42px;
+        margin-top: 80px;
+    }
+
+    .subtitle-combi{
+        font-size: 32px;
+        margin-bottom: 32px;
+    }
+}
+
+.glasses-choice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .choice-menu{
+       
+        width: 20%;
+       
+        margin-right: 24px;
+        margin-bottom: 80px;
+
+        @include ipad(){
+            width: 40%;
+            margin: 0 auto;
+            margin-bottom: 40px;
+           
+
+        }
+
+        @include mobile(){
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 24px;
+        }
+
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+
+        .name{
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+
+            .number{
+                font-size: $h4-font-size;
+            }
+
+            .price{
+                font-size: $h4-font-size;
+                color:$primary;
+            }
+
+        }
+
+        .dot{
+            display: flex;
+            align-items: center;    
+        }
+
+        .dot::before {
+            content:"";
+            width: 22px;
+            height: 22px;
+            background-color:#5F3E2D;
+            border-radius: 4px;
+            margin-right: 8px;
+           
+        }
+
+        .dot::after {
+            content:"";
+            width: 22px;
+            height: 22px;
+            background-color:#B75929;
+            border-radius: 4px;
+          
+        }
+    }
+}
+
+
