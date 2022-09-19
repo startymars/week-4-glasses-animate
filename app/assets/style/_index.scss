@@ -9,6 +9,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow-x: hidden;
     
     @include mobile(){
 
@@ -38,14 +39,15 @@
         }
   
         @keyframes example{
-            from {left:0px; top:0px;}
-            to {left:100px; top:0px;}
+            from {left:-20px; top:0px;}
+            to {left:20px; top:0px;}
         }
         .animate{
             position: relative;
             animation-name: example;
             animation-duration: 2s;
             animation-iteration-count: 2;
+
         }
     
         .h1-title{
@@ -157,6 +159,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        overflow-x: hidden;
 
         @include ipad(){
 
