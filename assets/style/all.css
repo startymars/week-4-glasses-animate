@@ -302,7 +302,8 @@ footer {
   background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true");
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  overflow-x: hidden; }
   @media (max-width: 767px) {
     .background-image {
       height: 396px; } }
@@ -321,18 +322,18 @@ footer {
 
 @-webkit-keyframes example {
   from {
-    left: 0px;
+    left: -20px;
     top: 0px; }
   to {
-    left: 100px;
+    left: 20px;
     top: 0px; } }
 
 @keyframes example {
   from {
-    left: 0px;
+    left: -20px;
     top: 0px; }
   to {
-    left: 100px;
+    left: 20px;
     top: 0px; } }
     .background-image .title .animate {
       position: relative;
@@ -407,7 +408,8 @@ footer {
   .service-photo .photo-list {
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    overflow-x: hidden; }
     @media (max-width: 992px) {
       .service-photo .photo-list {
         flex-wrap: wrap; } }
